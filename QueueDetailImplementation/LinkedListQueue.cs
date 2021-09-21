@@ -40,5 +40,25 @@ namespace StackAndQueueImplementation.QueueDetailImplementation
             }
             Console.WriteLine("\n");
         }
+        public Gtype deQueue()
+        {
+
+            if (this.frontNode == null)
+            {
+                Console.WriteLine("Queue is empty");
+                return frontNode.data;
+            }
+            else
+            {
+                NodeCreation<Gtype> temp = frontNode;
+                this.frontNode = frontNode.next;
+                return temp.data;
+            }
+            if (frontNode == null)
+            {
+                this.rearNode = null;
+            }
+
+        }
     }
 }

@@ -15,6 +15,11 @@ namespace StackAndQueueImplementation.QueueDetailImplementation
             queue.enQueue(70);
             Console.WriteLine("After enqueue some node into queue");
             queue.displayLL();
+            Console.WriteLine("\n****************************************************************");
+            int value = queue.deQueue();
+            Console.WriteLine("After Dequeue node into queue");
+            Console.WriteLine("Dequeue value is " + value);
+            queue.displayLL();
             Console.WriteLine("****************************************************************");
         }
     }

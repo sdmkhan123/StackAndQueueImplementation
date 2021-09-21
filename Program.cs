@@ -23,7 +23,7 @@ namespace StackAndQueueImplementation
                 {
                     case 1:
                         Console.WriteLine("****************************************************************");
-                        Console.WriteLine("Welcome to  Queue");
+                        Console.WriteLine("Welcome to  Stack");
                         Console.WriteLine("****************************************************************\n");
                         Stack.stackMehtod();
                         break;

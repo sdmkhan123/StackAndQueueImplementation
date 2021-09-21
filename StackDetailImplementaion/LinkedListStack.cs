@@ -26,20 +26,6 @@ namespace StackAndQueueImplementation.StackDetailImplementaion
                 top = stackNode;
             }
         }
-        public Gtype peek()
-        {
-            NodeCreation<Gtype> temp = this.top;
-            if (temp == null)
-            {
-                Console.WriteLine("Given stack is empty");
-                return temp.data;
-            }
-            else
-            {
-                return temp.data;
-            }
-
-        }
         /// <summary>
         /// display the all the data in Current stack
         /// </summary>
@@ -59,6 +45,39 @@ namespace StackAndQueueImplementation.StackDetailImplementaion
                 temp = temp.next;
             }
             Console.WriteLine("\n");
+        }
+        /// <summary>
+        /// Find the Top most element of the stack i.e. Peek
+        /// </summary>
+        /// <returns></returns>
+        public Gtype peek()
+        {
+            NodeCreation<Gtype> temp = this.top;
+            if (temp == null)
+            {
+                Console.WriteLine("Given stack is empty");
+                return temp.data;
+            }
+            else
+            {
+                return temp.data;
+            }
+        }
+        /// <summary>
+        /// Pop the element from the stack one by one till satck empty
+        /// </summary>
+        public void pop()
+        {
+            if(top == null)
+            {
+                return;
+            }
+            else
+            {
+                Console.Write(top.data + " ");
+                this.top = top.next;
+                pop();
+            }
         }
     }
 }

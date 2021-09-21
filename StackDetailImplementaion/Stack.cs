@@ -4,7 +4,7 @@ using System.Text;
 
 namespace StackAndQueueImplementation.StackDetailImplementaion
 {
-    class Stack
+    public class Stack
     {
         public static void stackMehtod()
         {

@@ -26,6 +26,20 @@ namespace StackAndQueueImplementation.StackDetailImplementaion
                 top = stackNode;
             }
         }
+        public Gtype peek()
+        {
+            NodeCreation<Gtype> temp = this.top;
+            if (temp == null)
+            {
+                Console.WriteLine("Given stack is empty");
+                return temp.data;
+            }
+            else
+            {
+                return temp.data;
+            }
+
+        }
         /// <summary>
         /// display the all the data in Current stack
         /// </summary>

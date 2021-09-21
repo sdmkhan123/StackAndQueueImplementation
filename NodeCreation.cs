@@ -1,4 +1,5 @@
 ﻿using StackAndQueueImplementation.StackDetailImplementaion;
+using StackAndQueueImplementation.QueueDetailImplementation;
 using System;
 using System.Collections.Generic;
 using System.Text;
